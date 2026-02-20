@@ -21,6 +21,7 @@
       color: #111827;
       -webkit-font-smoothing: antialiased;
       line-height: 1.6;
+      text-wrap: pretty;
     }
 
     /* ========== Animations ========== */
@@ -157,54 +158,64 @@
   </div>
 </nav>
 
-<!-- ========== HERO (with price comparisons) ========== -->
-<section class="hero-section" style="background:#fff;padding:32px 48px 32px;border-bottom:1px solid #f3f4f6;">
+<!-- ========== HERO ========== -->
+<section class="hero-section" style="background:#fff;padding:48px 48px 48px;">
   <div style="max-width:1060px;margin:0 auto;animation:fadeUp 0.6s ease both;">
 
     <!-- Headline -->
-    <h1 class="hero-headline" style="font-size:48px;font-weight:900;color:#111827;line-height:1.1;letter-spacing:-0.03em;margin-bottom:44px;text-align:center;">
-      Most Amazon shoppers<br>never see these prices.
+    <h1 class="hero-headline" style="font-size:48px;font-weight:900;color:#111827;line-height:1.1;letter-spacing:-0.03em;margin-bottom:20px;text-align:center;">
+      There's a simple way to<br>pay less on Amazon.
     </h1>
 
-    <!-- Two-column layout: Card left, Text right -->
-    <div class="hero-columns" style="display:flex;align-items:center;gap:48px;max-width:900px;margin:0 auto;">
+    <!-- Bridge copy -->
+    <p class="hero-sub" style="font-size:20px;color:#374151;line-height:1.7;font-weight:500;max-width:680px;margin:0 auto 36px;text-align:center;">
+      Amazon shows you one price, but it's often cheaper elsewhere. A free tool called <strong style="color:#111827;">Capital One Shopping</strong> finds lower prices and coupons automatically. 11 million people already use it.
+    </p>
 
-      <!-- Left: Keurig Card -->
-      <div style="flex:0 0 auto;width:380px;">
-        <div style="position:relative;background:#fff;border-radius:16px;border:1px solid #e5e7eb;padding:28px 32px 24px;box-shadow:0 1px 6px rgba(0,0,0,0.04);text-align:center;">
-          <div style="position:absolute;top:-16px;left:50%;transform:translateX(-50%);background:#CC0C39;color:#fff;font-size:16px;font-weight:800;padding:6px 18px;border-radius:8px;white-space:nowrap;letter-spacing:-0.01em;">Save $196.37</div>
-          <!-- Product -->
-          <div style="display:flex;flex-direction:column;align-items:center;margin-bottom:20px;">
-            <div style="font-size:17px;font-weight:700;color:#111827;line-height:1.3;margin-top:10px;margin-bottom:12px;">Keurig K-Caf&eacute; Coffee Maker</div>
-            <div style="width:160px;height:160px;background:#f9fafb;border-radius:12px;display:flex;align-items:center;justify-content:center;overflow:hidden;">
-              <img src="images/keurig.png" alt="Keurig K-Cafe Coffee Maker" style="max-height:140px;max-width:140px;object-fit:contain;">
+    <!-- Keurig proof -->
+    <div style="background:#f9fafb;border-radius:20px;padding:36px 40px;max-width:900px;margin:0 auto;border:1px solid #e5e7eb;">
+      <p style="text-align:center;font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#16a34a;margin-bottom:24px;">Here's what that looks like</p>
+      <div class="hero-columns" style="display:flex;align-items:center;gap:48px;">
+
+        <!-- Left: Keurig Card -->
+        <div style="flex:0 0 auto;width:420px;">
+          <div style="position:relative;background:#fff;border-radius:16px;border:1px solid #e5e7eb;padding:32px 36px 28px;box-shadow:0 1px 6px rgba(0,0,0,0.04);text-align:center;">
+            <div style="position:absolute;top:-16px;left:50%;transform:translateX(-50%);background:#CC0C39;color:#fff;font-size:17px;font-weight:800;padding:7px 20px;border-radius:8px;white-space:nowrap;letter-spacing:-0.01em;">Save $196.37</div>
+            <!-- Product -->
+            <div style="display:flex;flex-direction:column;align-items:center;margin-bottom:24px;">
+              <div style="font-size:19px;font-weight:700;color:#111827;line-height:1.3;margin-top:10px;margin-bottom:14px;">Keurig K-Caf&eacute; Coffee Maker</div>
+              <div style="width:200px;height:200px;background:#fff;border-radius:12px;display:flex;align-items:center;justify-content:center;overflow:hidden;">
+                <img src="images/keurig.png" alt="Keurig K-Cafe Coffee Maker" style="max-height:180px;max-width:180px;object-fit:contain;">
+              </div>
             </div>
-          </div>
-          <!-- Prices -->
-          <div style="display:flex;align-items:center;justify-content:center;gap:20px;">
-            <div style="text-align:center;">
-              <div style="font-size:13px;font-weight:600;color:#9ca3af;margin-bottom:4px;">Amazon</div>
-              <div style="font-size:26px;font-weight:800;color:#d1d5db;text-decoration:line-through;letter-spacing:-0.02em;">$326.36</div>
-            </div>
-            <div style="font-size:22px;color:#d1d5db;">&#8594;</div>
-            <div style="text-align:center;">
-              <div style="font-size:13px;font-weight:600;color:#6b7280;margin-bottom:4px;">Keurig.com</div>
-              <div style="font-size:26px;font-weight:800;color:#111827;letter-spacing:-0.02em;">$129.99</div>
+            <!-- Prices -->
+            <div style="display:flex;align-items:center;justify-content:center;gap:20px;">
+              <div style="text-align:center;">
+                <div style="font-size:14px;font-weight:600;color:#9ca3af;margin-bottom:4px;">Amazon</div>
+                <div style="font-size:28px;font-weight:800;color:#d1d5db;text-decoration:line-through;letter-spacing:-0.02em;">$326.36</div>
+              </div>
+              <div style="font-size:24px;color:#d1d5db;">&#8594;</div>
+              <div style="text-align:center;">
+                <div style="font-size:14px;font-weight:600;color:#6b7280;margin-bottom:4px;">Keurig.com</div>
+                <div style="font-size:28px;font-weight:800;color:#111827;letter-spacing:-0.02em;">$129.99</div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- Right: Text -->
-      <div style="flex:1;text-align:left;">
-        <p style="font-size:18px;color:#374151;line-height:1.7;font-weight:500;">
-          If a better offer is found for the product you're shopping, a notification will appear instantly, showing you discounts and even advising you to buy from another retailer where it's priced lower! Same product, just cheaper.
-        </p>
-        <p style="font-size:18px;color:#374151;line-height:1.7;font-weight:500;margin-top:16px;">
-          The only thing you have to do is to add <a href="https://chromewebstore.google.com/detail/capital-one-shopping-save/nenlahapcbofgnanklpelkaejcehkggg?hl=en-US" style="color:#16a34a;font-weight:700;text-decoration:underline;">Capital One Shopping</a> to your browser! It's 100% free for everyone (no Capital One account required!) and works to find amazing deals, coupons, and price drops across the web.
-        </p>
-      </div>
-
+        <!-- Right: Text + CTA -->
+        <div style="flex:1;text-align:left;">
+          <p style="font-size:18px;color:#374151;line-height:1.7;font-weight:500;">
+            This Keurig is the same product, same model, same specs, just <strong style="color:#CC0C39;">$196 less</strong> when bought from Keurig.com instead of Amazon. <strong style="color:#111827;">Without this tool, you'd never know.</strong>
+          </p>
+          <p style="font-size:18px;color:#374151;line-height:1.7;font-weight:500;margin-top:16px;">
+            It finds these differences automatically while you browse. No searching, no clipping coupons, nothing to remember.
+          </p>
+          <div style="margin-top:24px;">
+            <a class="btn" href="https://placeholder-affiliate-link.com" style="font-size:18px;padding:16px 40px;">Add Free Savings Tool</a>
+            <p style="color:#9ca3af;font-size:14px;margin-top:10px;">Installs in 10 seconds. 100% free.</p>
+          </div>
+        </div>
     </div>
 
   </div>

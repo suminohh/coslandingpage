@@ -126,7 +126,7 @@
       .comparison-cards { flex-direction: column !important; }
       .comparison-card-inner { flex-direction: column !important; text-align: center; }
       .comparison-card-inner > div { min-width: unset !important; }
-      .stores-grid { grid-template-columns: repeat(2, 1fr) !important; }
+      .stores-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 12px !important; }
       .steps-grid { grid-template-columns: 1fr !important; }
       .stats-grid { grid-template-columns: repeat(2, 1fr) !important; }
       .reviews-grid { grid-template-columns: 1fr !important; }
@@ -191,10 +191,10 @@
       <!-- Right: Text -->
       <div style="flex:1;text-align:left;">
         <p style="font-size:18px;color:#374151;line-height:1.7;font-weight:500;">
-          The only thing you have to do is to add <a href="https://chromewebstore.google.com/detail/capital-one-shopping-save/nenlahapcbofgnanklpelkaejcehkggg?hl=en-US" style="color:#16a34a;font-weight:700;text-decoration:underline;">Capital One Shopping</a> to your browser! It's 100% free for everyone (no Capital One account required!) and works to find amazing deals, coupons, and price drops across the web.
+          If a better offer is found for the product you're shopping, a notification will appear instantly, showing you discounts and even advising you to buy from another retailer where it's priced lower! Same product, just cheaper.
         </p>
         <p style="font-size:18px;color:#374151;line-height:1.7;font-weight:500;margin-top:16px;">
-          If a better offer is found for the product you're shopping, a notification will appear instantly. It shows you discounts, and even advises you to buy from another retailer where it's priced lower! Same product, just cheaper.
+          The only thing you have to do is to add <a href="https://chromewebstore.google.com/detail/capital-one-shopping-save/nenlahapcbofgnanklpelkaejcehkggg?hl=en-US" style="color:#16a34a;font-weight:700;text-decoration:underline;">Capital One Shopping</a> to your browser! It's 100% free for everyone (no Capital One account required!) and works to find amazing deals, coupons, and price drops across the web.
         </p>
       </div>
 
@@ -203,16 +203,8 @@
   </div>
 </section>
 
-<!-- ========== CTA BAND ========== -->
-<section style="background:#f0fdf4;padding:36px 48px;text-align:center;border-bottom:1px solid #bbf7d0;">
-  <p style="font-size:18px;color:#16a34a;font-weight:700;margin-bottom:20px;">
-    100% free. No credit card. No Capital One account needed.
-  </p>
-  <a class="btn" href="https://placeholder-affiliate-link.com" style="font-size:20px;padding:18px 52px;">Add to Browser &mdash; It's Free</a>
-</section>
-
 <!-- ========== SOCIAL PROOF ========== -->
-<section style="background:#fff;padding:36px 48px;text-align:center;border-bottom:1px solid #f3f4f6;">
+<section style="background:#f9fafb;padding:36px 48px;text-align:center;border-bottom:1px solid #f3f4f6;">
   <div style="max-width:1060px;margin:0 auto;">
     <!-- Social Proof Strip -->
     <div class="hero-proof-strip" style="display:flex;align-items:center;justify-content:center;gap:36px;">
@@ -235,6 +227,14 @@
     </div>
 
   </div>
+</section>
+
+<!-- ========== CTA BAND ========== -->
+<section style="background:#f0fdf4;padding:36px 48px;text-align:center;border-bottom:1px solid #bbf7d0;">
+  <p style="font-size:18px;color:#16a34a;font-weight:700;margin-bottom:20px;">
+    100% free. No credit card. No Capital One account needed.
+  </p>
+  <a class="btn" href="https://placeholder-affiliate-link.com" style="font-size:20px;padding:18px 52px;">Add to Browser &mdash; It's Free</a>
 </section>
 
 <!-- ========== MORE PRICE EXAMPLES ========== -->
@@ -298,46 +298,30 @@
 <section class="section-pad" style="background:#fff;padding:52px 48px;border-bottom:1px solid #f3f4f6;">
   <div style="max-width:1160px;margin:0 auto;">
     <p style="text-align:center;font-size:14px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#9ca3af;margin-bottom:32px;">Works at over 100,000 stores including</p>
-    <div class="stores-grid" style="display:grid;grid-template-columns:repeat(5,1fr);gap:16px;">
-      <div class="store-card" style="background:#fff8ee;border-radius:14px;padding:20px 16px;text-align:center;border:1px solid #e5e7eb;">
-        <div style="font-weight:800;font-size:17px;color:#ff9900;margin-bottom:6px;">Amazon</div>
-        <div style="font-size:14px;font-weight:600;color:#16a34a;">Up to 5%</div>
+    <div class="stores-grid" style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px;">
+      <div style="background:#fff;border-radius:14px;padding:24px 16px;text-align:center;border:1px solid #e5e7eb;display:flex;align-items:center;justify-content:center;">
+        <img src="images/walmart.webp" alt="Walmart" style="max-height:40px;max-width:160px;object-fit:contain;">
       </div>
-      <div class="store-card" style="background:#eef3ff;border-radius:14px;padding:20px 16px;text-align:center;border:1px solid #e5e7eb;">
-        <div style="font-weight:800;font-size:17px;color:#003580;margin-bottom:6px;">Expedia</div>
-        <div style="font-size:14px;font-weight:600;color:#16a34a;">1.5% back</div>
+      <div style="background:#fff;border-radius:14px;padding:24px 16px;text-align:center;border:1px solid #e5e7eb;display:flex;align-items:center;justify-content:center;">
+        <img src="images/target.webp" alt="Target" style="max-height:40px;max-width:160px;object-fit:contain;">
       </div>
-      <div class="store-card" style="background:#eef4ff;border-radius:14px;padding:20px 16px;text-align:center;border:1px solid #e5e7eb;">
-        <div style="font-weight:800;font-size:17px;color:#0d67fe;margin-bottom:6px;">VRBO</div>
-        <div style="font-size:14px;font-weight:600;color:#16a34a;">1% back</div>
+      <div style="background:#fff;border-radius:14px;padding:24px 16px;text-align:center;border:1px solid #e5e7eb;display:flex;align-items:center;justify-content:center;">
+        <img src="images/kohls.webp" alt="Kohl's" style="max-height:40px;max-width:160px;object-fit:contain;">
       </div>
-      <div class="store-card" style="background:#eef1ff;border-radius:14px;padding:20px 16px;text-align:center;border:1px solid #e5e7eb;">
-        <div style="font-weight:800;font-size:17px;color:#003594;margin-bottom:6px;">Hilton</div>
-        <div style="font-size:14px;font-weight:600;color:#16a34a;">1% back</div>
+      <div style="background:#fff;border-radius:14px;padding:24px 16px;text-align:center;border:1px solid #e5e7eb;display:flex;align-items:center;justify-content:center;">
+        <img src="images/jcpenney.webp" alt="JCPenney" style="max-height:40px;max-width:160px;object-fit:contain;">
       </div>
-      <div class="store-card" style="background:#fff0f0;border-radius:14px;padding:20px 16px;text-align:center;border:1px solid #e5e7eb;">
-        <div style="font-weight:800;font-size:17px;color:#cc0000;margin-bottom:6px;">IHG</div>
-        <div style="font-size:14px;font-weight:600;color:#16a34a;">2% back</div>
+      <div style="background:#fff;border-radius:14px;padding:24px 16px;text-align:center;border:1px solid #e5e7eb;display:flex;align-items:center;justify-content:center;">
+        <img src="images/walgreens.webp" alt="Walgreens" style="max-height:40px;max-width:160px;object-fit:contain;">
       </div>
-      <div class="store-card" style="background:#eef3ff;border-radius:14px;padding:20px 16px;text-align:center;border:1px solid #e5e7eb;">
-        <div style="font-weight:800;font-size:17px;color:#003580;margin-bottom:6px;">Priceline</div>
-        <div style="font-size:14px;font-weight:600;color:#16a34a;">2% back</div>
+      <div style="background:#fff;border-radius:14px;padding:24px 16px;text-align:center;border:1px solid #e5e7eb;display:flex;align-items:center;justify-content:center;">
+        <img src="images/michaels.webp" alt="Michaels" style="max-height:40px;max-width:160px;object-fit:contain;">
       </div>
-      <div class="store-card" style="background:#f5f5f5;border-radius:14px;padding:20px 16px;text-align:center;border:1px solid #e5e7eb;">
-        <div style="font-weight:800;font-size:17px;color:#111;margin-bottom:6px;">Nike</div>
-        <div style="font-size:14px;font-weight:600;color:#16a34a;">Coupons</div>
+      <div style="background:#fff;border-radius:14px;padding:24px 16px;text-align:center;border:1px solid #e5e7eb;display:flex;align-items:center;justify-content:center;">
+        <img src="images/gnc.webp" alt="GNC" style="max-height:40px;max-width:160px;object-fit:contain;">
       </div>
-      <div class="store-card" style="background:#eef6ff;border-radius:14px;padding:20px 16px;text-align:center;border:1px solid #e5e7eb;">
-        <div style="font-weight:800;font-size:17px;color:#0071ce;margin-bottom:6px;">Walmart</div>
-        <div style="font-size:14px;font-weight:600;color:#16a34a;">Coupons</div>
-      </div>
-      <div class="store-card" style="background:#fff0f0;border-radius:14px;padding:20px 16px;text-align:center;border:1px solid #e5e7eb;">
-        <div style="font-weight:800;font-size:17px;color:#cc0000;margin-bottom:6px;">Target</div>
-        <div style="font-size:14px;font-weight:600;color:#16a34a;">Coupons</div>
-      </div>
-      <div class="store-card" style="background:#fff2f1;border-radius:14px;padding:20px 16px;text-align:center;border:1px solid #e5e7eb;">
-        <div style="font-weight:800;font-size:17px;color:#e74c3c;margin-bottom:6px;">Chewy</div>
-        <div style="font-size:14px;font-weight:600;color:#16a34a;">Coupons</div>
+      <div style="background:#fff;border-radius:14px;padding:24px 16px;text-align:center;border:1px solid #e5e7eb;display:flex;align-items:center;justify-content:center;">
+        <img src="images/hobbylobby.webp" alt="Hobby Lobby" style="max-height:40px;max-width:160px;object-fit:contain;">
       </div>
     </div>
   </div>

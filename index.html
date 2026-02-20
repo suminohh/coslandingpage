@@ -32,6 +32,14 @@
       from { transform: translateY(-100%); opacity: 0; }
       to { transform: translateY(0); opacity: 1; }
     }
+    @keyframes wiggle {
+      0%, 100% { transform: rotate(0deg); }
+      15% { transform: rotate(-3deg); }
+      30% { transform: rotate(3deg); }
+      45% { transform: rotate(-2deg); }
+      60% { transform: rotate(2deg); }
+      75% { transform: rotate(-1deg); }
+    }
 
     /* ========== CTA Button ========== */
     .btn {
@@ -504,7 +512,7 @@
 <section style="background:linear-gradient(160deg,#052e16 0%,#14532d 100%);padding:88px 48px;text-align:center;">
   <h2 class="final-h2" style="font-size:48px;font-weight:900;color:#fff;letter-spacing:-0.03em;line-height:1.15;max-width:640px;margin:0 auto 20px;">Join now for free and start saving today.</h2>
   <p style="color:rgba(255,255,255,0.75);font-size:19px;line-height:1.7;max-width:520px;margin:0 auto 44px;font-weight:400;">11 million shoppers are already saving automatically. It takes 10 seconds to install and costs nothing.</p>
-  <a class="btn" href="https://placeholder-affiliate-link.com" style="font-size:20px;padding:20px 56px;background:#fff;color:#111827;" onmouseenter="this.style.background='#f9fafb'" onmouseleave="this.style.background='#fff'">Add to Browser &mdash; It's Free</a>
+  <a id="final-cta-btn" class="btn" href="https://placeholder-affiliate-link.com" style="font-size:20px;padding:20px 56px;background:#fff;color:#111827;" onmouseenter="this.style.background='#f9fafb'" onmouseleave="this.style.background='#fff'">Add to Browser &mdash; It's Free</a>
   <p style="color:rgba(255,255,255,0.45);font-size:14px;margin-top:16px;">No credit card &middot; No Capital One account required &middot; Remove anytime</p>
 </section>
 
@@ -539,6 +547,23 @@
     animItems.forEach(function(el) { observer.observe(el); });
   } else {
     animItems.forEach(function(el) { el.classList.add('in-view'); });
+  }
+
+  // === Final CTA wiggle ===
+  var finalBtn = document.getElementById('final-cta-btn');
+  if (finalBtn && 'IntersectionObserver' in window) {
+    var wiggleObserver = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          finalBtn.style.animation = 'wiggle 0.6s ease';
+          finalBtn.addEventListener('animationend', function() {
+            finalBtn.style.animation = '';
+          }, { once: true });
+          wiggleObserver.unobserve(finalBtn);
+        }
+      });
+    }, { threshold: 0.5 });
+    wiggleObserver.observe(finalBtn);
   }
 
   // === FAQ accordion ===
